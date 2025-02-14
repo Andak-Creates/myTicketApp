@@ -45,7 +45,10 @@ const SelectTicket = () => {
         <p>Join us for an unforgettable experience at</p>
         <p>Techember Fest! Secure your spot now</p>
         <div>
-          <small>04 Rumens road, Ikoyi, Lagos</small>{" "}
+          <small>
+            <i style={{ color: "red" }} className="bi bi-geo"></i>04 Rumens
+            road, Ikoyi, Lagos
+          </small>{" "}
           <small>March 15, 2025 | 7:00 PM</small>
         </div>
       </div>

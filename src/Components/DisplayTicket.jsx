@@ -39,7 +39,10 @@ const DisplayTicket = () => {
           <div className="myTicket" id={idx} key={idx}>
             <div className="torchlight"></div>
             <h1>Techember Fest "25</h1>
-            <p>04 Rumens road, Ikoyi, Lagos</p>
+            <p>
+              <i style={{ color: "red" }} className="bi bi-geo"></i>04 Rumens
+              road, Ikoyi, Lagos
+            </p>
             <p>March 15, 2025 | 7:00 PM</p>
             <img src={user.avatar} alt="" />
 
