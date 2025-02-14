@@ -16,7 +16,7 @@ const NavBar = () => {
       </ul>
 
       <div className="ticketLink">
-        My Tickets <i className="bi bi-arrow-right"></i>
+        My Tickets<i className="bi bi-arrow-right"></i>
       </div>
     </nav>
   );
