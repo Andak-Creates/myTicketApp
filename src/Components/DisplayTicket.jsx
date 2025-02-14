@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "../CSS/ticket.css";
 import BarcodeGenerator from "./BarcodeGenerator";
+import "../CSS/myTicket.css";
 
 const DisplayTicket = () => {
   const [userDetails, setUserDetails] = useState([]);
