@@ -1,0 +1,322 @@
+.ticket {
+  text-align: center;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .myBtns {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    gap: 10px;
+
+    button {
+      margin-top: 30px;
+      width: 70%;
+      padding: 10px;
+      font-size: 18px;
+      background: var(--borderGreen);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    :nth-child(1) {
+      background: none;
+      border: 0.1px solid var(--borderGreen);
+      color: var(--borderGreen);
+
+      &:hover {
+        color: white;
+        background: var(--borderGreen);
+        border: none;
+      }
+    }
+
+    :nth-child(2) {
+      &:hover {
+        border: 0.1px solid var(--borderGreen);
+        color: var(--borderGreen);
+        background: none;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 30px !important;
+    margin-top: 20px;
+  }
+
+  .holder {
+    border: 0.1px solid var(--borderGreen);
+    width: 320px;
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #1976862a;
+
+    /*  */
+
+    .myTicket {
+      border: 1px solid var(--borderGreen);
+      border-radius: 18px;
+      width: 100%;
+      padding: 20px;
+      margin: auto;
+      z-index: 2;
+      background-color: #041e2362;
+      position: relative;
+      overflow: hidden !important;
+
+      > .torchlight {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 70%;
+        border-radius: 0;
+        overflow: hidden;
+        background: radial-gradient(
+          circle at top,
+          #1976868b,
+          rgba(255, 255, 255, 0) 70%
+        );
+        z-index: 1;
+      }
+
+      > h1 {
+        font-size: 38px;
+        font-family: "Road Rage", serif;
+      }
+
+      > p {
+        font-size: 12px;
+        margin: 2px;
+      }
+
+      img {
+        margin-top: 10px;
+        height: 130px;
+        width: 130px;
+        border: 3px solid var(--borderGreen);
+        border-radius: 10px;
+      }
+
+      .detailHolder {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        background-color: #08343c;
+        backdrop-filter: blur(2px);
+        padding: 10px 5px;
+        border-radius: 10px;
+
+        .detail {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+
+          :nth-child(1) {
+            border-left: none;
+            border-top: none;
+          }
+          :nth-child(2) {
+            border-top: none;
+            border-right: none;
+          }
+          :nth-child(3) {
+            border-left: none;
+          }
+          :nth-child(4) {
+            border-right: none;
+          }
+
+          > div {
+            width: 45%;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            border: 0.1px solid var(--borderGreen);
+            text-align: left;
+            padding: 5px 10px 10px 5px;
+            border-radius: 0% !important;
+
+            small {
+              font-size: 6px;
+              color: grey;
+            }
+
+            p {
+              font-size: 8px;
+            }
+          }
+        }
+
+        .specialRequest {
+          width: 280px;
+          height: 50px;
+          display: flex;
+          margin: 10px auto;
+          flex-direction: column;
+          text-align: left;
+          padding: 10px;
+
+          small {
+            font-size: 10px;
+            color: grey;
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  /* Barcode Section */
+  .barcode {
+    margin-top: 50px;
+    position: relative;
+
+    > .torchlight {
+      position: absolute;
+      bottom: -30px;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+        circle at bottom,
+        #1976868b,
+        rgba(255, 255, 255, 0) 70%
+      );
+      z-index: 5;
+    }
+
+    .cut {
+      position: absolute;
+      height: auto;
+      width: 20px;
+      z-index: 10;
+      top: -23px;
+      left: -10px;
+      width: 280px;
+      display: flex;
+      gap: 5px;
+      padding: 3px;
+      border-radius: 0 !important;
+
+      .tinyCut {
+        height: 3px;
+        width: 30px;
+        border: 0.1px solid var(--borderGreen);
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.holder {
+  .circle {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 50%;
+    border: 0.1px solid var(--borderGreen);
+    background-color: var(--darkBackGround);
+    z-index: 1;
+    right: 0;
+  }
+
+  :nth-child(1) {
+    top: -1.5px;
+    left: -1.6px;
+    border-left: none;
+    border-top: none;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 40%;
+  }
+
+  :nth-child(2) {
+    top: -1.5px;
+    right: -1.6px;
+    border-right: none;
+    border-top: none;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 40%;
+  }
+
+  :nth-child(3) {
+    bottom: -1.5px;
+    left: -1.6px;
+    border-left: none;
+    border-bottom: none;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 50%;
+    border-bottom-right-radius: 10%;
+  }
+
+  :nth-child(4) {
+    bottom: -1.5px;
+    right: -1.6px;
+    border-right: none;
+    border-bottom: none;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 50%;
+    border-bottom-left-radius: 10%;
+  }
+
+  :nth-child(5) {
+    bottom: 185px;
+    right: -2px;
+    border-right: none;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+  }
+  :nth-child(6) {
+    bottom: 185px;
+    left: -2px;
+    border-left: none;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+  }
+}
+
+/* Media Query */
+@media (max-width: 550px) {
+  .ticket {
+    width: 300px;
+
+    .myBtns {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+
+      button {
+        margin-top: 0;
+        width: 100%;
+      }
+    }
+
+    .holder {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .ticket {
+    width: 250px;
+  }
+}

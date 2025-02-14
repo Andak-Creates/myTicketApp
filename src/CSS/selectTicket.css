@@ -1,0 +1,152 @@
+.typeForm {
+  width: 450px;
+  margin-top: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+
+  .themeDetail {
+    border: 0.1px solid var(--borderGreen);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    /* background: var(--darkBackGround); */
+    background: radial-gradient(
+      circle at top left,
+      #19768675,
+      var(--darkBackGround) 60%
+    );
+    overflow: hidden;
+    position: relative;
+
+    h1 {
+      font-size: 50px;
+      font-family: "Road Rage", serif;
+      font-weight: 200;
+    }
+
+    p {
+      font-size: 13px;
+      margin-top: 2px;
+    }
+  }
+
+  .typeHolder {
+    border: 0.1px solid var(--borderGreen);
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+
+    > div {
+      border: 1.5px solid var(--borderGreen);
+      padding: 8px;
+      width: 200px;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #19768669 !important;
+      }
+
+      > h2 {
+        font-size: 17px;
+        font-weight: 200;
+      }
+
+      > p {
+        font-size: 12px;
+        font-weight: 100;
+        margin: 3px 0;
+      }
+
+      > small {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .mySelect {
+    select {
+      padding: 7px;
+      background: none;
+      border-radius: 10px;
+      border: 0.1px solid var(--borderGreen);
+
+      option {
+        color: black;
+      }
+    }
+  }
+
+  button {
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto !important;
+    background: var(--borderGreen);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--darkBackGround);
+      border: 0.1px solid var(--borderGreen);
+    }
+  }
+}
+
+/* Media Query */
+
+@media (max-width: 550px) {
+  .typeForm {
+    width: 300px;
+
+    .themeDetail {
+      margin-bottom: 60px;
+
+      h1 {
+        margin-bottom: 5px;
+      }
+
+      > div {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        small {
+          font-size: 10px;
+        }
+      }
+    }
+
+    .typeHolder {
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px;
+
+      > div {
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .typeForm {
+    width: 280px;
+
+    .themeDetail {
+      margin-bottom: 30px;
+
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  transition: all 400ms ease;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --borderGreen: #197686;
+  scroll-behavior: smooth;
+
+  --darkBackGround: #041e23;
+}
+
+body {
+  background-color: #02191d;
+}
+
+.torchlight {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  bottom: -40%;
+  z-index: -1;
+  background: radial-gradient(
+    circle at bottom,
+    #1976868b,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+
+/* Navigation */
+nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid var(--borderGreen);
+  padding: 8px 12px;
+  border-radius: 24px;
+  background-color: #05252c81;
+  backdrop-filter: blur(2px);
+  z-index: 40;
+
+  /* Title */
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    img {
+      width: 35px;
+      height: 30px;
+      border-radius: 10px;
+    }
+  }
+
+  /* navigation links */
+  .navLinks {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+
+    /* links */
+    li {
+      cursor: pointer;
+    }
+  }
+
+  .ticketLink {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+  }
+}
+
+.formDisplay {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 70px 0 20px;
+  position: relative;
+
+  .formHolder {
+    border: 1px solid var(--borderGreen);
+    padding: 30px;
+    background-color: var(--darkBackGround);
+    border-radius: 15px;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 630px) {
+  nav {
+    .navLinks {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  nav {
+    .navLinks {
+      display: none;
+    }
+  }
+
+  .formDisplay {
+    width: 80%;
+    margin: 100px auto;
+    position: relative;
+  }
+}
